@@ -1,0 +1,81 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    height: 100vh;
+    background-color: #f4f4f9;
+    overflow: hidden;
+}
+
+/* Menu Lateral */
+.sidebar {
+    width: 60px;
+    background: linear-gradient(to right, #4b0082, #5e3aee);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    position: fixed;
+    height: 100vh;
+    overflow: auto;
+}
+
+.sidebar .logo {
+    width: 80px;
+    height: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar .logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: center;
+    text-align: center;
+}
+
+.sidebar ul li {
+    margin: 50px 0;
+}
+
+.sidebar ul li button {
+    background: linear-gradient(to right, #b995d4, #ab00f4);
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.sidebar ul li button:hover {
+    background: linear-gradient(to right, #1f1f3d, #1e1e35);
+}
+
+.sidebar ul li button img {
+    width: 20px;
+    height: 20px;
+}
+
+/*Atendimento Cliente */
+
+.content {
+
+}
+
+.content h1 {
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+text-align: center;
+}

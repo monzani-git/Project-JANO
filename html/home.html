@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jano Dashboard</title>
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body class="dashboard-body">
+    <div class="container">
+        <!-- Menu lateral -->
+        <div class="sidebar">
+            <div class="logo"><img src="../img/profile_logo.png" alt=""></div>
+            <ul class="menu">
+                <li>
+                    <button type="button" class="btn btn-primary" onclick="location.reload();">
+                    <img src="../img/clipboard-data.svg" alt="">
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-primary" onclick="window.location.href='newclient.html';">
+                    <img src="../img/person-plus-fill.svg" alt="">
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-primary" onclick="window.location.href='product.html';">
+                    <img src="../img/folder-fill.svg" alt="">
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-primary" onclick="window.location.href='adm.html';">
+                    <img src="../img/person-fill-gear.svg" alt="">
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-primary" onclick="window.location.href='config.html';">
+                    <img src="../img/gear.svg" alt="">
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Gráficos -->
+        <div class="content">
+            <h1>Dashboard</h1>
+            <div class="charts">
+                <div class="chart-box">
+                    <h2>Planos Vendidos no Mês</h2>
+                    <canvas id="planosChart"></canvas>
+                </div>
+                <div class="chart-box">
+                    <h2>Vendas por Dia</h2>
+                    <canvas id="vendasDiaChart"></canvas>
+                </div>
+                <div class="chart-box">
+                    <h2>Vendedor x Total Mês</h2>
+                    <canvas id="vendedorChart"></canvas>
+                </div>
+                <div class="chart-box">
+                    <h2>Monthly Sales Data</h2>
+                    <canvas id="salesDataChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>
